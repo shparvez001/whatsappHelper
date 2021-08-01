@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Whatsapp Helper</title>
+		<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' ">
+    </head>
+    <style type="text/css">
+	body {font-family: Arial, Helvetica, sans-serif;}
+	* {box-sizing: border-box;}
+
+	body {
+			margin: 10px;
+			width: 300px;
+			border-radius: 25px;
+			background-color: #d1dbfd;
+			opacity: 0.7;
+			/*border: 3px solid #f1f199;*/
+			
+        }
+	h1 {
+	    text-align: center;
+		color: #1f2e60;
+        }
+	h3 {
+	    font-size: 15px;
+	    text-align: center;
+        }
+	form{
+		border:2px;
+		}
+	button {
+		  background-color: violet;
+		  color: white;
+		  padding: 10px 10px;
+		  border: 2px;
+		  border-radius: 6px;
+		  cursor: pointer;
+		  opacity: 0.9;
+		   margin: 0 auto;
+		   justify-content: center;
+		   
+		  /*
+		  position: relative;
+		  bottom: 5px;
+		  right: 28px;
+		  width: 280px;*/
+		}
+	input{
+				color: blue;
+				background-color: #f8f6e0;
+				width: 100%;
+				height: 100%;
+				border-top-style: hidden;
+				border-right-style: hidden;
+				border-bottom-style: solid;
+				border-left-style: hidden;
+				border-width: 5px;
+				text-align: center;
+				font-size: 14pt;
+				font-family: 'Indie Flower', cursive;
+			}
+	 a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+    </style>
+    <body>
+        <h1>Whatsapp Helper</h1>
+		<h3>Open Whatsapp Web: <a href="https://web.whatsapp.com/" target="_blank" rel="noopener"> <img src="whatsappLogo.png" alt="Open Whatsapp web" width="30" height="30"></a></h3>
+		<hr>
+		<h3>Initiate Whatsapp Chat <br><br>
+		<form action="https://api.whatsapp.com/send?" autocomplete="off">
+		  <!-- Phone number: --><input type="text" id="phoneNumber" placeholder="Phone number (8801711111111)" ><br><br>
+		  <!-- <input type="submit" value="Start Message"> -->
+		  <span id="informationText"></span>
+		<span id="outputButton"></span>
+		</form></h3>
+		<script src="background.js"></script>
+    </body>
+</html>
